@@ -1,0 +1,41 @@
+{
+  "name": "NTH-start-project",
+  "version": "1.0.0",
+  "description": "Start a library of blocks and technical solutions for HTML/CSS/js page layout.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/gulp",
+    "deploy": "cross-env NODE_ENV=production ./node_modules/.bin/gulp build && cross-env ./node_modules/.bin/gulp deploy"
+  },
+  "author": "Nikolay Gromov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicothin/NTH-start-project.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
+    "css-mqpacker": "^4.0.0",
+    "cross-env": "^1.0.7",
+    "del": "^2.2.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-debug": "^2.1.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-if": "^2.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "config": {
+    "ghPages": "http://snatali.github.io/42348-pink-1",
+    "directories": {
+      "source": "./src",
+      "build": "./build"
+    }
+  }
+}

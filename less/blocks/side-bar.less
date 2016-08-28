@@ -1,0 +1,30 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 32%;
+
+@media  (min-width: @screen-sm) {}
+@media  (min-width: @screen-md) {}
+
+
+  &__button {
+    display: inline-block;
+    background: @black;
+    color: @white;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: @font-family;
+    font-size: (@font-size+14);
+    line-height: (@line-height+10);
+    margin-bottom: 10px;
+
+  @media  (min-width: @screen-sm) {}
+  @media  (min-width: @screen-md) {}
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

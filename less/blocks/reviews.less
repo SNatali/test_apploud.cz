@@ -1,0 +1,51 @@
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+
+@media  (min-width: @screen-sm) {}
+@media  (min-width: @screen-md) {}
+
+
+  &__photo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  @media  (min-width: @screen-sm) {
+    width: 50%;
+  }
+  @media  (min-width: @screen-md) {
+    width: 25%;
+  }
+
+    &:hover {
+      position: relative;
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 0;
+      background-color: fade(@white, 80%);
+      z-index: 1;
+      bottom: 0;
+    }
+
+    &:hover .btn_hover {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    & img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
